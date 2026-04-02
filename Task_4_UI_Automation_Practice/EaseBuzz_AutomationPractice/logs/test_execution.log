@@ -1,0 +1,332 @@
+2026-04-02 00:32:00,493 - EaseBuzzApplication - INFO - Test Step: Radio test for radio1
+2026-04-02 00:32:00,665 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:32:00,666 - EaseBuzzApplication - INFO - Test Step: Click radio radio1
+2026-04-02 00:32:00,666 - EaseBuzzApplication - INFO - Selecting radio: radio1
+2026-04-02 00:32:00,667 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio1"]')
+2026-04-02 00:32:02,861 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 00:32:03,930 - EaseBuzzApplication - INFO - Test Step: Radio test for radio2
+2026-04-02 00:32:03,944 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:32:03,945 - EaseBuzzApplication - INFO - Test Step: Click radio radio2
+2026-04-02 00:32:03,945 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 00:32:03,945 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 00:32:06,184 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 00:32:07,258 - EaseBuzzApplication - INFO - Test Step: Radio test for radio3
+2026-04-02 00:32:07,271 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:32:07,271 - EaseBuzzApplication - INFO - Test Step: Click radio radio3
+2026-04-02 00:32:07,272 - EaseBuzzApplication - INFO - Selecting radio: radio3
+2026-04-02 00:32:07,272 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio3"]')
+2026-04-02 00:32:09,599 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 00:32:10,666 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 00:32:10,677 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:32:10,677 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 00:32:10,677 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 00:32:11,868 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 00:32:13,023 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option2
+2026-04-02 00:32:13,032 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:32:13,032 - EaseBuzzApplication - INFO - Test Step: Select 'Option2' from dropdown
+2026-04-02 00:32:13,033 - EaseBuzzApplication - INFO - Selecting dropdown option: Option2
+2026-04-02 00:32:14,166 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 00:32:15,351 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option3
+2026-04-02 00:32:15,362 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:32:15,363 - EaseBuzzApplication - INFO - Test Step: Select 'Option3' from dropdown
+2026-04-02 00:32:15,363 - EaseBuzzApplication - INFO - Selecting dropdown option: Option3
+2026-04-02 00:32:16,510 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 00:32:17,639 - EaseBuzzApplication - INFO - Test Step: Combined radio + dropdown flow
+2026-04-02 00:32:17,648 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:32:17,648 - EaseBuzzApplication - INFO - Test Step: Select radio radio2
+2026-04-02 00:32:17,648 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 00:32:17,649 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 00:32:20,851 - EaseBuzzApplication - INFO - Test Step: Select dropdown Option3
+2026-04-02 00:32:20,851 - EaseBuzzApplication - INFO - Selecting dropdown option: Option3
+2026-04-02 00:39:19,870 - EaseBuzzApplication - INFO - Test Step: Radio test for radio1
+2026-04-02 00:39:23,090 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:39:23,090 - EaseBuzzApplication - INFO - Test Step: Click radio radio1
+2026-04-02 00:39:23,091 - EaseBuzzApplication - INFO - Selecting radio: radio1
+2026-04-02 00:39:23,092 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio1"]')
+2026-04-02 00:39:25,630 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 00:39:26,696 - EaseBuzzApplication - INFO - Test Step: Radio test for radio2
+2026-04-02 00:39:26,707 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:39:26,708 - EaseBuzzApplication - INFO - Test Step: Click radio radio2
+2026-04-02 00:39:26,708 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 00:39:26,709 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 00:39:28,894 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 00:39:29,966 - EaseBuzzApplication - INFO - Test Step: Radio test for radio3
+2026-04-02 00:39:29,976 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:39:29,977 - EaseBuzzApplication - INFO - Test Step: Click radio radio3
+2026-04-02 00:39:29,978 - EaseBuzzApplication - INFO - Selecting radio: radio3
+2026-04-02 00:39:29,978 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio3"]')
+2026-04-02 00:39:32,206 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 00:41:09,758 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 00:41:09,981 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:41:09,982 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 00:41:09,982 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 00:41:11,248 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 00:41:12,369 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option2
+2026-04-02 00:41:12,384 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:41:12,385 - EaseBuzzApplication - INFO - Test Step: Select 'Option2' from dropdown
+2026-04-02 00:41:12,385 - EaseBuzzApplication - INFO - Selecting dropdown option: Option2
+2026-04-02 00:41:13,620 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 00:41:14,762 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option3
+2026-04-02 00:41:14,768 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:41:14,769 - EaseBuzzApplication - INFO - Test Step: Select 'Option3' from dropdown
+2026-04-02 00:41:14,769 - EaseBuzzApplication - INFO - Selecting dropdown option: Option3
+2026-04-02 00:41:15,926 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 00:51:45,887 - EaseBuzzApplication - INFO - Test Step: Radio test for radio1
+2026-04-02 00:51:45,978 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:51:45,979 - EaseBuzzApplication - INFO - Test Step: Click radio radio1
+2026-04-02 00:51:45,979 - EaseBuzzApplication - INFO - Selecting radio: radio1
+2026-04-02 00:51:45,979 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio1"]')
+2026-04-02 00:51:49,251 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 00:51:50,577 - EaseBuzzApplication - INFO - Test Step: Radio test for radio2
+2026-04-02 00:51:50,585 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:51:50,586 - EaseBuzzApplication - INFO - Test Step: Click radio radio2
+2026-04-02 00:51:50,586 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 00:51:50,586 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 00:51:52,943 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 00:51:54,292 - EaseBuzzApplication - INFO - Test Step: Radio test for radio3
+2026-04-02 00:51:54,300 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:51:54,301 - EaseBuzzApplication - INFO - Test Step: Click radio radio3
+2026-04-02 00:51:54,301 - EaseBuzzApplication - INFO - Selecting radio: radio3
+2026-04-02 00:51:54,301 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio3"]')
+2026-04-02 00:51:56,597 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 00:51:57,880 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 00:51:57,895 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:51:57,896 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 00:51:57,896 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 00:51:59,334 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 00:52:00,642 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option2
+2026-04-02 00:52:00,652 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:52:00,653 - EaseBuzzApplication - INFO - Test Step: Select 'Option2' from dropdown
+2026-04-02 00:52:00,653 - EaseBuzzApplication - INFO - Selecting dropdown option: Option2
+2026-04-02 00:52:02,038 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 00:52:03,383 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option3
+2026-04-02 00:52:03,394 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:52:03,395 - EaseBuzzApplication - INFO - Test Step: Select 'Option3' from dropdown
+2026-04-02 00:52:03,395 - EaseBuzzApplication - INFO - Selecting dropdown option: Option3
+2026-04-02 00:52:04,732 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 00:52:06,058 - EaseBuzzApplication - INFO - Test Step: Combined radio + dropdown flow
+2026-04-02 00:52:06,067 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:52:06,067 - EaseBuzzApplication - INFO - Test Step: Select radio radio2
+2026-04-02 00:52:06,067 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 00:52:06,068 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 00:52:09,531 - EaseBuzzApplication - INFO - Test Step: Select dropdown Option3
+2026-04-02 00:52:09,532 - EaseBuzzApplication - INFO - Selecting dropdown option: Option3
+2026-04-02 00:58:40,476 - EaseBuzzApplication - INFO - Test Step: Radio test for radio1
+2026-04-02 00:58:40,808 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:58:40,808 - EaseBuzzApplication - INFO - Test Step: Click radio radio1
+2026-04-02 00:58:40,809 - EaseBuzzApplication - INFO - Selecting radio: radio1
+2026-04-02 00:58:40,809 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio1"]')
+2026-04-02 00:58:43,192 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 00:58:44,438 - EaseBuzzApplication - INFO - Test Step: Radio test for radio2
+2026-04-02 00:58:44,450 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:58:44,450 - EaseBuzzApplication - INFO - Test Step: Click radio radio2
+2026-04-02 00:58:44,450 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 00:58:44,451 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 00:58:46,691 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 00:58:47,922 - EaseBuzzApplication - INFO - Test Step: Radio test for radio3
+2026-04-02 00:58:47,933 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:58:47,933 - EaseBuzzApplication - INFO - Test Step: Click radio radio3
+2026-04-02 00:58:47,933 - EaseBuzzApplication - INFO - Selecting radio: radio3
+2026-04-02 00:58:47,933 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio3"]')
+2026-04-02 00:58:50,233 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 00:58:51,476 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 00:58:51,488 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:58:51,489 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 00:58:51,489 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 00:58:51,489 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 00:58:53,801 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 00:58:54,989 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 00:58:56,285 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option2
+2026-04-02 00:58:56,292 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:58:56,292 - EaseBuzzApplication - INFO - Test Step: Select 'Option2' from dropdown
+2026-04-02 00:58:56,292 - EaseBuzzApplication - INFO - Selecting dropdown option: Option2
+2026-04-02 00:58:56,292 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 00:58:58,543 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 00:58:59,688 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 00:59:00,965 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option3
+2026-04-02 00:59:00,972 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:59:00,973 - EaseBuzzApplication - INFO - Test Step: Select 'Option3' from dropdown
+2026-04-02 00:59:00,973 - EaseBuzzApplication - INFO - Selecting dropdown option: Option3
+2026-04-02 00:59:00,973 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 00:59:03,438 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 00:59:04,610 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 00:59:05,897 - EaseBuzzApplication - INFO - Test Step: Combined radio + dropdown flow
+2026-04-02 00:59:05,904 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:59:05,904 - EaseBuzzApplication - INFO - Test Step: Select radio radio2
+2026-04-02 00:59:05,905 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 00:59:05,905 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 00:59:09,408 - EaseBuzzApplication - INFO - Test Step: Select dropdown Option3
+2026-04-02 00:59:09,408 - EaseBuzzApplication - INFO - Selecting dropdown option: Option3
+2026-04-02 00:59:09,409 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 00:59:11,654 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 00:59:58,181 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 00:59:58,374 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 00:59:58,375 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 00:59:58,376 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 00:59:58,376 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:00:00,881 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:00:02,044 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:00:03,324 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option2
+2026-04-02 01:00:03,333 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:00:03,334 - EaseBuzzApplication - INFO - Test Step: Select 'Option2' from dropdown
+2026-04-02 01:00:03,334 - EaseBuzzApplication - INFO - Selecting dropdown option: Option2
+2026-04-02 01:00:03,335 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:00:05,733 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:00:06,909 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:00:08,194 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option3
+2026-04-02 01:00:08,201 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:00:08,201 - EaseBuzzApplication - INFO - Test Step: Select 'Option3' from dropdown
+2026-04-02 01:00:08,201 - EaseBuzzApplication - INFO - Selecting dropdown option: Option3
+2026-04-02 01:00:08,202 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:00:10,509 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:00:11,664 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:01:12,817 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 01:01:13,004 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:01:13,005 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 01:01:13,005 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:01:13,005 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:01:15,752 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:01:16,927 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:01:18,191 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option2
+2026-04-02 01:01:18,201 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:01:18,201 - EaseBuzzApplication - INFO - Test Step: Select 'Option2' from dropdown
+2026-04-02 01:01:18,201 - EaseBuzzApplication - INFO - Selecting dropdown option: Option2
+2026-04-02 01:01:18,202 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:01:20,570 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:01:21,723 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:01:23,021 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option3
+2026-04-02 01:01:23,030 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:01:23,031 - EaseBuzzApplication - INFO - Test Step: Select 'Option3' from dropdown
+2026-04-02 01:01:23,032 - EaseBuzzApplication - INFO - Selecting dropdown option: Option3
+2026-04-02 01:01:23,032 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:01:25,318 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:01:26,473 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:04:51,469 - EaseBuzzApplication - INFO - Test Step: Radio test for radio2
+2026-04-02 01:04:51,688 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:04:51,689 - EaseBuzzApplication - INFO - Test Step: Click radio radio2
+2026-04-02 01:04:51,689 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 01:04:51,689 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 01:04:53,964 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 01:04:55,186 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 01:04:55,195 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:04:55,196 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 01:04:55,196 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:04:55,196 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:04:57,441 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:04:58,609 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:04:59,910 - EaseBuzzApplication - INFO - Test Step: Combined radio + dropdown flow
+2026-04-02 01:04:59,919 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:04:59,919 - EaseBuzzApplication - INFO - Test Step: Select radio radio2
+2026-04-02 01:04:59,919 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 01:04:59,920 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 01:05:03,432 - EaseBuzzApplication - INFO - Test Step: Select dropdown Option1
+2026-04-02 01:05:03,432 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:05:03,432 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:05:05,732 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:05:36,048 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 01:05:36,282 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:05:36,282 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 01:05:36,283 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:05:36,283 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:05:38,614 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:05:39,866 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:05:58,261 - EaseBuzzApplication - INFO - Test Step: Radio test for radio2
+2026-04-02 01:05:58,572 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:05:58,575 - EaseBuzzApplication - INFO - Test Step: Click radio radio2
+2026-04-02 01:05:58,576 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 01:05:58,578 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 01:06:01,073 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 01:09:40,530 - EaseBuzzApplication - INFO - Test Step: Combined radio + dropdown flow
+2026-04-02 01:09:40,852 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:09:40,852 - EaseBuzzApplication - INFO - Test Step: Select radio radio2
+2026-04-02 01:09:40,853 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 01:09:40,853 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 01:09:43,438 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 01:09:44,765 - EaseBuzzApplication - INFO - Test Step: Select dropdown Option1
+2026-04-02 01:09:44,765 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:09:44,765 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:09:47,052 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:09:48,233 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:10:37,851 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 01:10:38,093 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:10:38,094 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 01:10:38,094 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:10:38,094 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:10:40,451 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:10:41,643 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:17:20,731 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 01:17:20,957 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:17:20,958 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 01:17:20,958 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:17:20,958 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:17:23,282 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:17:24,475 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:22:36,675 - EaseBuzzApplication - INFO - Test Step: Radio test for radio2
+2026-04-02 01:22:36,933 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:22:36,933 - EaseBuzzApplication - INFO - Test Step: Click radio radio2
+2026-04-02 01:22:36,934 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 01:22:36,934 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 01:22:39,242 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 01:22:40,521 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 01:22:40,535 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:22:40,535 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 01:22:40,535 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:22:40,535 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:22:42,845 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:22:44,038 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:22:45,800 - EaseBuzzApplication - INFO - Test Step: Combined radio + dropdown flow
+2026-04-02 01:22:45,809 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:22:45,809 - EaseBuzzApplication - INFO - Test Step: Select radio radio2
+2026-04-02 01:22:45,811 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 01:22:45,812 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 01:22:48,056 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 01:22:49,273 - EaseBuzzApplication - INFO - Test Step: Select dropdown Option1
+2026-04-02 01:22:49,273 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:22:49,273 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:22:51,525 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:22:52,680 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:29:07,701 - EaseBuzzApplication - INFO - Test Step: Radio test for radio2
+2026-04-02 01:29:07,992 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:29:07,993 - EaseBuzzApplication - INFO - Test Step: Click radio radio2
+2026-04-02 01:29:07,994 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 01:29:07,994 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 01:29:10,781 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 01:29:12,123 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 01:29:12,138 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:29:12,139 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 01:29:12,139 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:29:12,139 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:29:14,949 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:29:16,305 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:29:18,241 - EaseBuzzApplication - INFO - Test Step: Combined radio + dropdown flow
+2026-04-02 01:29:18,261 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:29:18,261 - EaseBuzzApplication - INFO - Test Step: Select radio radio2
+2026-04-02 01:29:18,262 - EaseBuzzApplication - INFO - Selecting radio: radio2
+2026-04-02 01:29:18,262 - EaseBuzzApplication - INFO - Clicking on element with locator: ('css selector', 'input[name="radioButton"][value="radio2"]')
+2026-04-02 01:29:20,707 - EaseBuzzApplication - INFO - Test Step: Assert radio is selected
+2026-04-02 01:29:22,057 - EaseBuzzApplication - INFO - Test Step: Select dropdown Option1
+2026-04-02 01:29:22,057 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:29:22,058 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:29:24,492 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:29:25,725 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:30:56,588 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 01:30:56,858 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:30:56,858 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 01:30:56,859 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:30:56,859 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:30:59,396 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:31:00,687 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 01:31:20,806 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 01:31:21,071 - EaseBuzzApplication - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 01:31:21,073 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 01:31:21,074 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 01:31:21,075 - EaseBuzzApplication - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 01:31:23,596 - EaseBuzzApplication - INFO - Clicking element directly
+2026-04-02 01:31:24,858 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
+2026-04-02 10:37:46,978 - EaseBuzzApplication - INFO - Test Step: Dropdown test for Option1
+2026-04-02 10:37:47,472 - Practice UI Application - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-02 10:37:47,473 - EaseBuzzApplication - INFO - Test Step: Select 'Option1' from dropdown
+2026-04-02 10:37:47,474 - EaseBuzzApplication - INFO - Selecting dropdown option: Option1
+2026-04-02 10:37:47,475 - Practice UI Application - INFO - Clicking on element with locator: ('id', 'dropdown-class-example')
+2026-04-02 10:37:50,399 - Practice UI Application - INFO - Clicking element directly
+2026-04-02 10:37:51,770 - EaseBuzzApplication - INFO - Test Step: Assert displayed selection matches
