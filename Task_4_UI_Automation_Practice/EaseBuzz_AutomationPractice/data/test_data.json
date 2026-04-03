@@ -1,4 +1,4 @@
 {
-  "radio_values": ["radio2"],
-  "dropdown_options": ["Option1"]
+    "visible_text": "Option3",
+    "value": "radio2"
 }

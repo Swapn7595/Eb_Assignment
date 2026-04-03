@@ -1,37 +1,22 @@
+# conftest.py
 import os
 import pytest
+import logging
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-from openpyxl.styles import Font
-import openpyxl
-
-from selenium.common.exceptions import WebDriverException
-
 from utils.config import environments
-from utils.config import TestStepLogger
 from utils.config import logger
-from utils.errors import TestDataError
-from utils.screenshot_helper import capture_assertion, capture_failure
-from utils.practice_test_data import load_practice_test_data
+from utils.config import test_step_logger
+from utils.config import TestStepLogger
+#from utils.screenshot_manager import capture_failure
+from utils.helper import *
+import openpyxl
+from openpyxl.styles import Font
 
-
-def pytest_generate_tests(metafunc):
-    """Parametrize radio/dropdown tests from data/test_data.json (lists can be a subset of all options)."""
-    if "radio_value" not in metafunc.fixturenames and "option_text" not in metafunc.fixturenames:
-        return
-    try:
-        data = load_practice_test_data()
-    except TestDataError as e:
-        raise RuntimeError(f"Fix data/test_data.json: {e}") from e
-    if "radio_value" in metafunc.fixturenames:
-        metafunc.parametrize("radio_value", data.get("radio_values") or [])
-    if "option_text" in metafunc.fixturenames:
-        metafunc.parametrize("option_text", data.get("dropdown_options") or [])
-
+# Create or load Excel workbook
 report_path = "reports/test_report.xlsx"
-os.makedirs(os.path.dirname(report_path), exist_ok=True)
 if os.path.exists(report_path):
     workbook = openpyxl.load_workbook(report_path)
     sheet = workbook.active
@@ -39,124 +24,86 @@ else:
     workbook = openpyxl.Workbook()
     sheet = workbook.active
     sheet.title = "Test Report"
-    headers = [
-        "Test Case ID",
-        "Test Title",
-        "Test Steps",
-        "Status",
-        "Error Message",
-        "Execution Time",
-    ]
+    headers = ["Test Case ID", "Test Title", "Test Steps", "Status", "Error Message", "Execution Time"]
     for col_num, header in enumerate(headers, 1):
         cell = sheet.cell(row=1, column=col_num, value=header)
         cell.font = Font(bold=True)
 
+# Track current row for new data
 current_row = sheet.max_row + 1
 
+# Initialize TestStepLogger
 test_step_logger = TestStepLogger()
 
-existing_test_ids = set(
-    (row[0].value, row[1].value) for row in sheet.iter_rows(min_row=2, max_row=sheet.max_row)
-)
+# Track existing test case IDs to avoid duplicates
+existing_test_ids = set((row[0].value, row[1].value) for row in sheet.iter_rows(min_row=2, max_row=sheet.max_row))
 
+# Counter for test case IDs
 test_case_counter = sheet.max_row - 1 if sheet.max_row > 1 else 0
 
 
 def pytest_addoption(parser):
     parser.addoption(
-        "--env",
-        action="store",
-        default="dev",
-        help="Environment to run tests against",
+        "--env", action="store", default="dev", help="Environment to run tests against"
     )
     parser.addoption(
-        "--headless",
-        action="store_true",
-        default=False,
-        help="Run browser in headless mode",
+        "--headless", action="store_true", default=False, help="Run browser in headless mode"
     )
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope='session')
 def config(request):
     env = request.config.getoption("--env")
     if env in environments:
         return environments[env]
-    raise ValueError(f"Unknown environment: {env}")
+    else:
+        raise ValueError(f"Unknown environment: {env}")
 
 
-@pytest.fixture
-def assertion_screenshot(driver, request):
-    """Call `assertion_screenshot('label')` after an assert to store UI evidence under .screenshots/assertions/."""
-
-    def _capture(label: str) -> str:
-        try:
-            path = capture_assertion(driver, request.node.name, label)
-            print(f"\n[ASSERTION SCREENSHOT] {path}")
-            return path
-        except RuntimeError as e:
-            logger.error("Assertion screenshot not saved: %s", e)
-            raise
-
-    return _capture
-
-
-@pytest.fixture(scope="session")
+@pytest.fixture(scope='session')
 def driver(config, request):
     chrome_options = Options()
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--window-size=1920,1080")
-    chrome_options.add_argument("--ignore-certificate-errors")
-    chrome_options.add_argument("--log-level=3")
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--window-size=1920,1080')
+    chrome_options.add_argument('--ignore-certificate-errors')
+    chrome_options.add_argument('--log-level=3')
 
-    headless = request.config.getoption("--headless")
+    # Add headless option if requested
+    headless = request.config.getoption('--headless')
     if headless:
-        chrome_options.add_argument("--headless=new")
+        chrome_options.add_argument('--headless=new')  # Use new headless mode for Chrome 109+
 
     service = Service()
-    try:
-        driver = webdriver.Chrome(service=service, options=chrome_options)
-        driver.maximize_window()
-    except WebDriverException as e:
-        logger.error("Browser failed to start (Chrome/WebDriver): %s", e)
-        raise
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+    driver.maximize_window()
 
-    base_url = config["base_url"]
-    try:
-        driver.get(base_url)
-    except WebDriverException as e:
-        logger.error("Initial navigation failed to %s: %s", base_url, e)
-        driver.quit()
-        raise
+    base_url = config['base_url']
+    driver.get(base_url)
 
     yield driver
-    try:
-        driver.quit()
-    except WebDriverException:
-        logger.debug("driver.quit() raised; browser may already be closed", exc_info=True)
+    driver.quit()
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_protocol(item, nextitem):
     global test_case_counter
     start_time = datetime.now()
-    if hasattr(test_step_logger, "steps"):
+    # Reset steps for each test
+    if hasattr(test_step_logger, 'steps'):
         test_step_logger.steps.clear()
     else:
         test_step_logger.steps = []
     yield
     end_time = datetime.now()
 
-    test_func = getattr(item, "function", None)
+    # Get test function name and docstring for better title
+    test_func = getattr(item, 'function', None)
     test_name = item.name
-    doc = (
-        test_func.__doc__
-        if test_func and hasattr(test_func, "__doc__") and test_func.__doc__
-        else ""
-    )
+    doc = test_func.__doc__ if test_func and hasattr(test_func, '__doc__') and test_func.__doc__ else ''
     if doc and doc.strip():
-        test_title = doc.strip().split("\n")[0]
+        test_title = doc.strip().split('\n')[0]
     else:
+        # Fallback: prettify function name
         test_title = " ".join(word.capitalize() for word in test_name.split("_"))
 
     test_case_counter += 1
@@ -176,17 +123,12 @@ def pytest_runtest_makereport(item, call):
 
     if report.when == "call":
         status = "Passed" if report.outcome == "passed" else "Failed"
-        error_message = (
-            ""
-            if status == "Passed"
-            else str(report.longrepr)
-            if hasattr(report, "longrepr")
-            else "Unknown Error"
-        )
+        error_message = "" if status == "Passed" else str(report.longrepr) if hasattr(report, 'longrepr') else "Unknown Error"
 
+        # Always fetch from user_properties, fallback to safe values
         user_props = dict(item.user_properties)
         execution_time = user_props.get("execution_time", "N/A")
-        test_case_id = user_props.get("test_case_id", "TC_XXX")
+        test_case_id = user_props.get("test_case_id", f"TC_XXX")
         test_title = user_props.get("test_title", item.name)
         test_steps = user_props.get("test_steps", "No steps logged")
 
@@ -201,16 +143,16 @@ def pytest_runtest_makereport(item, call):
             existing_test_ids.add((test_case_id, test_title))
             current_row += 1
 
-    if report.when == "call" and report.failed:
-        drv = item.funcargs.get("driver")
-        if drv:
+    if report.failed:
+        driver = item.funcargs.get("driver")
+        if driver:
             exc_type = type(call.excinfo.value).__name__ if call.excinfo else "Exception"
             try:
-                screenshot_path = capture_failure(drv, item.nodeid, exc_type)
-                print(f"\n[FAILURE SCREENSHOT] {screenshot_path}")
-            except RuntimeError as e:
-                logger.warning("Failure screenshot skipped: %s", e)
-                print(f"\n[FAILURE SCREENSHOT SKIPPED] {e}")
+                screenshot_path = capture_failure(driver, item.nodeid, exc_type)
+                logger.error(f"[SCREENSHOT SAVED ON FAILURE] {screenshot_path}")
+                print(f"\n✓ [SCREENSHOT SAVED ON FAILURE] {screenshot_path}")
+            except Exception as e:
+                logger.error(f"Failed to capture screenshot on failure: {e}")
 
 
 @pytest.hookimpl(trylast=True)
@@ -220,4 +162,5 @@ def pytest_sessionfinish(session, exitstatus):
         print(f"Enhanced test report saved to {report_path}")
     except Exception as e:
         print(f"Failed to save test report: {e}")
+
 

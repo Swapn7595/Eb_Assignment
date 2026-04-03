@@ -1,9 +1,16 @@
 import os
 from datetime import datetime
-
 from selenium.common.exceptions import WebDriverException
-
 from utils.config import logger
+
+from selenium.webdriver.chrome.webdriver import WebDriver
+from selenium.webdriver.remote.webelement import WebElement
+import time
+
+
+
+
+
 
 SCREENSHOTS_ROOT = os.path.join(os.getcwd(), ".screenshots")
 ASSERTIONS_DIR = os.path.join(SCREENSHOTS_ROOT, "assertions")
@@ -50,3 +57,46 @@ def capture_failure(driver, nodeid: str, exc_name: str) -> str:
 
 
 
+
+class ElementHighlighter:
+    """Utility class to highlight elements on the browser"""
+    
+    def __init__(self, driver: WebDriver):
+        self.driver = driver
+    
+    def highlight_element(self, element: WebElement, duration: float = 2):
+        """
+        Highlight an element with a red border and yellow background
+        
+        Args:
+            element: WebElement to highlight
+            duration: Time in seconds to keep the highlight (default: 2)
+        """
+        try:
+            original_style = element.get_attribute('style')
+            highlight_style = "border: 3px solid red; background-color: yellow;"
+            
+            self.driver.execute_script(
+                f"arguments[0].setAttribute('style', '{highlight_style}');",
+                element
+            )
+            
+            time.sleep(duration)
+            
+            # Restore original style
+            self.driver.execute_script(
+                f"arguments[0].setAttribute('style', '{original_style}');",
+                element
+            )
+        except Exception as e:
+            print(f"Error highlighting element: {e}")
+    
+    def highlight_and_click(self, element: WebElement):
+        """Highlight element and click it"""
+        self.highlight_element(element, duration=1)
+        element.click()
+    
+    def highlight_and_send_keys(self, element: WebElement, text: str):
+        """Highlight element and send keys to it"""
+        self.highlight_element(element, duration=1)
+        element.send_keys(text)

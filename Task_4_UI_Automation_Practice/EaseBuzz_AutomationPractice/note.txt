@@ -1,0 +1,5 @@
+you can run your tests, generate an Allure report, and view it for your project
+=>
+pytest --alluredir=reports/allure-results
+allure generate reports/allure-results -o reports/allure-report --clean
+allure open reports/allure-report

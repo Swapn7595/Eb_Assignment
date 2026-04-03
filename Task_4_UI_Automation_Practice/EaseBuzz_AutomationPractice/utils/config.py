@@ -3,21 +3,22 @@
 import logging
 import os
 
-log_dir = os.path.join(os.getcwd(), "logs")
+# Configure logging
+log_dir = os.path.join(os.getcwd(), 'logs')
 os.makedirs(log_dir, exist_ok=True)
 
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(os.path.join(log_dir, "test_execution.log")),
-        logging.StreamHandler(),
-    ],
+        logging.FileHandler(os.path.join(log_dir, 'test_execution.log')),
+        logging.StreamHandler()
+    ]
 )
 
-logger = logging.getLogger("Practice UI Application")
+logger = logging.getLogger('PracticePageTestLogger')
 
-
+# Added a utility to dynamically log test steps
 class TestStepLogger:
     def __init__(self):
         self.steps = []
@@ -29,17 +30,20 @@ class TestStepLogger:
     def get_steps(self):
         return "\n".join(self.steps)
 
-
+# Create a global instance of TestStepLogger
 test_step_logger = TestStepLogger()
 
 environments = {
-    "qa": {
-        "base_url": "https://rahulshettyacademy.com/AutomationPractice/",
+    'qa': {
+        'base_url': 'https://rahulshettyacademy.com/AutomationPractice/',
+        # Add other environment-specific settings here
     },
-    "dev": {
-        "base_url": "https://rahulshettyacademy.com/AutomationPractice/",
+    'dev': {
+        'base_url': 'https://rahulshettyacademy.com/AutomationPractice/',
+        # Add other environment-specific settings here
     },
-    "prod": {
-        "base_url": "https://rahulshettyacademy.com/AutomationPractice/",
-    },
+    'prod': {
+        'base_url': 'https://rahulshettyacademy.com/AutomationPractice/',
+        # Add other environment-specific settings here
+    }
 }
