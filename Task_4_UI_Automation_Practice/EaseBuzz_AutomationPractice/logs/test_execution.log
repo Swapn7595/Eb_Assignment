@@ -223,3 +223,19 @@ assert 'Option31' in '                    Select\n                    Option1\n 
 2026-04-03 17:06:46,364 - PracticePageTestLogger - INFO - Clicking element directly
 2026-04-03 17:06:47,758 - PracticePageTestLogger - INFO - Test Step: Selected radio button with value: radio2
 2026-04-03 17:06:47,822 - PracticePageTestLogger - INFO - Test Step:  Radio button with value 'radio2' selected successfully
+2026-04-03 18:11:27,473 - PracticePageTestLogger - INFO - Test Step: Starting test: Dropdown Selection
+2026-04-03 18:11:27,497 - PracticePageTestLogger - INFO - Test Step: Opening practice page: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-03 18:11:33,133 - PracticePageTestLogger - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-03 18:11:34,010 - PracticePageTestLogger - INFO - Test Step: Selecting dropdown option: Option3
+2026-04-03 18:11:34,134 - PracticePageTestLogger - INFO - Clicking element directly
+2026-04-03 18:11:35,490 - PracticePageTestLogger - INFO - Test Step: Clicked on dropdown
+2026-04-03 18:11:35,606 - PracticePageTestLogger - INFO - Clicking element directly
+2026-04-03 18:11:36,805 - PracticePageTestLogger - INFO - Test Step: Selected option: Option3
+2026-04-03 18:11:36,970 - PracticePageTestLogger - INFO - Test Step: Dropdown 'Option3' selected successfully
+2026-04-03 18:11:39,190 - PracticePageTestLogger - INFO - Test Step: Starting test: Radio Button Selection
+2026-04-03 18:11:39,193 - PracticePageTestLogger - INFO - Test Step: Opening practice page: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-03 18:11:39,214 - PracticePageTestLogger - INFO - URL already open: https://rahulshettyacademy.com/AutomationPractice/
+2026-04-03 18:11:39,216 - PracticePageTestLogger - INFO - Test Step: Selecting radio button option: radio2
+2026-04-03 18:11:39,507 - PracticePageTestLogger - INFO - Clicking element directly
+2026-04-03 18:11:40,898 - PracticePageTestLogger - INFO - Test Step: Selected radio button with value: radio2
+2026-04-03 18:11:40,988 - PracticePageTestLogger - INFO - Test Step:  Radio button with value 'radio2' selected successfully
