@@ -22,9 +22,7 @@ MyntraApplication/
 
 ### Installation
 1. Clone the repository:
-   ```
    
-   ```
 2. Create and activate a virtual environment:
    ```sh
    python -m venv venv
@@ -38,6 +36,12 @@ MyntraApplication/
    ```
 
 ### Running Tests
+
+- To run all tests:
+  ```sh
+  pytest .\tests\test_Easebuzz_practice.py -v -s
+  ```
+
 - To run all tests and generate Excel and Allure reports:
   ```sh
   pytest --alluredir=reports/allure-results
