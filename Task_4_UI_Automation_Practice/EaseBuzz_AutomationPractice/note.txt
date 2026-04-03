@@ -1,5 +1,12 @@
 you can run your tests, generate an Allure report, and view it for your project
 =>
+To run all test cases:
+pytest .\tests\test_Easebuzz_practice.py -v -s
+
+To run specific test case:
+pytest .\tests\test_Easebuzz_practice.py -k test_dropdown_selection -v -s
+[pytest relatic path -k testcase name -v -s]
+
 pytest --alluredir=reports/allure-results
 allure generate reports/allure-results -o reports/allure-report --clean
 allure open reports/allure-report
