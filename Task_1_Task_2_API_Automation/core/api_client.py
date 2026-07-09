@@ -5,7 +5,7 @@ from .logger_setup import setup_logger
 from config import BASE_URL, TIMEOUT
 
 logger = setup_logger(__name__)
-
+ 
 
 class APIClient:
     """API Client wrapper with logging and error handling."""
@@ -54,3 +54,5 @@ class APIClient:
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.close()
+
+

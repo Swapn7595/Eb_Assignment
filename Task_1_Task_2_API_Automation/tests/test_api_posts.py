@@ -54,3 +54,5 @@ def test_save_first_5_posts(api_client):
         validate(instance=post, schema=SCHEMA_MAP["posts"])
     
     logger.info(f"[OK] Successfully saved first 5 posts to {file_path}")
+
+

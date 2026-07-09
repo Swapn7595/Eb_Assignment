@@ -747,3 +747,66 @@
 2026-04-03 18:09:16 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.114s
 2026-04-03 18:09:16 - tests.test_api_suite - INFO - Response content-type validation passed for all endpoints
 2026-04-03 18:09:16 - core.api_client - INFO - APIClient session closed
+2026-04-06 15:06:32 - core.api_client - INFO - APIClient initialized with base_url: https://jsonplaceholder.typicode.com
+2026-04-06 15:06:32 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/posts
+2026-04-06 15:06:32 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.497s
+2026-04-06 15:06:33 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/posts
+2026-04-06 15:06:33 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.141s
+2026-04-06 15:06:33 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/posts
+2026-04-06 15:06:33 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.133s
+2026-04-06 15:06:33 - tests.test_api_posts - INFO - [OK] Successfully saved first 5 posts to output\first_5_posts.json
+2026-04-06 15:06:33 - core.api_client - INFO - APIClient session closed
+2026-04-06 15:06:33 - core.api_client - INFO - APIClient initialized with base_url: https://jsonplaceholder.typicode.com
+2026-04-06 15:06:33 - tests.test_api_suite - INFO - Testing status code for posts
+2026-04-06 15:06:33 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/posts
+2026-04-06 15:06:33 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.427s
+2026-04-06 15:06:33 - tests.test_api_suite - INFO - posts returned status 200
+2026-04-06 15:06:33 - tests.test_api_suite - INFO - Testing status code for comments
+2026-04-06 15:06:33 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/comments
+2026-04-06 15:06:34 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.168s
+2026-04-06 15:06:34 - tests.test_api_suite - INFO - comments returned status 200
+2026-04-06 15:06:34 - tests.test_api_suite - INFO - Testing status code for users
+2026-04-06 15:06:34 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/users
+2026-04-06 15:06:34 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.151s
+2026-04-06 15:06:34 - tests.test_api_suite - INFO - users returned status 200
+2026-04-06 15:06:34 - tests.test_api_suite - INFO - Testing response time for posts
+2026-04-06 15:06:34 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/posts
+2026-04-06 15:06:34 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.141s
+2026-04-06 15:06:34 - tests.test_api_suite - INFO - posts response time: 0.141s (threshold: 2.0s)
+2026-04-06 15:06:34 - tests.test_api_suite - INFO - Testing response time for comments
+2026-04-06 15:06:34 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/comments
+2026-04-06 15:06:34 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.163s
+2026-04-06 15:06:34 - tests.test_api_suite - INFO - comments response time: 0.163s (threshold: 2.0s)
+2026-04-06 15:06:34 - tests.test_api_suite - INFO - Testing response time for users
+2026-04-06 15:06:34 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/users
+2026-04-06 15:06:34 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.136s
+2026-04-06 15:06:34 - tests.test_api_suite - INFO - users response time: 0.136s (threshold: 2.0s)
+2026-04-06 15:06:34 - tests.test_api_suite - INFO - Testing schema validation for posts
+2026-04-06 15:06:34 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/posts
+2026-04-06 15:06:35 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.151s
+2026-04-06 15:06:36 - tests.test_api_suite - INFO - posts schema validation passed for 100 items
+2026-04-06 15:06:36 - tests.test_api_suite - INFO - Testing schema validation for comments
+2026-04-06 15:06:36 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/comments
+2026-04-06 15:06:36 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.152s
+2026-04-06 15:06:41 - tests.test_api_suite - INFO - comments schema validation passed for 500 items
+2026-04-06 15:06:41 - tests.test_api_suite - INFO - Testing schema validation for users
+2026-04-06 15:06:41 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/users
+2026-04-06 15:06:41 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.127s
+2026-04-06 15:06:41 - tests.test_api_suite - INFO - users schema validation passed for 10 items
+2026-04-06 15:06:41 - tests.test_api_suite - INFO - Testing posts required fields
+2026-04-06 15:06:41 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/posts
+2026-04-06 15:06:41 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.135s
+2026-04-06 15:06:41 - tests.test_api_suite - INFO - Posts required fields validation passed
+2026-04-06 15:06:41 - tests.test_api_suite - INFO - Testing posts content integrity
+2026-04-06 15:06:41 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/posts
+2026-04-06 15:06:42 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.123s
+2026-04-06 15:06:42 - tests.test_api_suite - INFO - Posts content integrity validation passed
+2026-04-06 15:06:42 - tests.test_api_suite - INFO - Testing response content types
+2026-04-06 15:06:42 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/posts
+2026-04-06 15:06:42 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.115s
+2026-04-06 15:06:42 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/comments
+2026-04-06 15:06:42 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.144s
+2026-04-06 15:06:42 - core.api_client - INFO - GET request to: https://jsonplaceholder.typicode.com/users
+2026-04-06 15:06:42 - core.api_client - INFO - Response received - Status: 200, Response Time: 0.109s
+2026-04-06 15:06:42 - tests.test_api_suite - INFO - Response content-type validation passed for all endpoints
+2026-04-06 15:06:42 - core.api_client - INFO - APIClient session closed
