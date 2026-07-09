@@ -2,7 +2,7 @@
 
 ## 
 
-## Task Overview
+## Task Overview:
 
 ### Task 1: API Automation (Requests)
 - Fetch posts from API
